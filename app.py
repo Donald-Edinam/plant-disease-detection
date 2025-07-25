@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 # Configure CORS to allow requests from the frontend
-CORS(app, origins=['http://localhost:5173', 'https://agricom-fic3.onrender.com/#/'])
+CORS(app, origins=['http://localhost:5173', 'https://agricom-fic3.onrender.com/'])
 
 UPLOAD_FOLDER = "uploads"
 Path(UPLOAD_FOLDER).mkdir(exist_ok=True)
